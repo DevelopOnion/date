@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   
     noButton.addEventListener("mouseover", moveButton)
+    noButton.addEventListener("click", moveButton)
   
     yesButton.addEventListener("click", () => {
       question.textContent = "Let's go!"
