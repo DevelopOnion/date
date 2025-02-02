@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Dancing Script", cursive;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffe6e6;
+  overflow: hidden;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+#question {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #ff4d4d;
+  text-align: center;
+}
+
+.gif-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif-container img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  gap: 20px;
+}
+
+.yes-button,
+.no-button {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.yes-button {
+  background-color: #4caf50;
+  color: white;
+  z-index: 2;
+}
+
+.yes-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.no-button {
+  background-color: #f44336;
+  color: white;
+  position: fixed;
+  z-index: 2;
+}
+
+.no-button:hover {
+  background-color: #da190b;
+}
+
