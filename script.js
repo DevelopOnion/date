@@ -28,7 +28,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   
     noButton.addEventListener("mouseover", moveButton)
-    noButton.addEventListener("click", moveButton)
+    noButton.addEventListener("click", () => {
+        moveButton();
+        // Start moving the button every 600ms after click
+        const intervalId = setInterval(moveButton, 600);
+        // Stop the interval after 5 seconds
+        setTimeout(() => clearInterval(intervalId), 5000);
+    })
   
     yesButton.addEventListener("click", () => {
       question.textContent = "Let's go!"
